@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ng.riby.androidtest.MainActivity">
+
+    <ng.riby.androidtest.utils.PulsatorLayout
+        android:id="@+id/pulsator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerInParent="true"
+        app:pulse_color="#1A6DFF"
+        app:pulse_count="3"
+        app:pulse_duration="5000"
+        app:pulse_interpolator="Decelerate"
+        app:pulse_repeat="0"
+        app:pulse_startFromScratch="true">
+
+        <ImageView
+            android:id="@+id/action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_centerInParent="true"/>
+    </ng.riby.androidtest.utils.PulsatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
